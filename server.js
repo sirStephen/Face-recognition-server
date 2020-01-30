@@ -27,7 +27,7 @@ app.use(express.json({ extended: true }));
 app.use(cors());
 
 app.get('/', (request, response) => {
-    response.send(database.users);
+    response.send('it is working');
 })
 
 app.post('/login', (request, response) => {
